@@ -10,7 +10,7 @@ export default function ArticlesSection() {
       <div className="flex items-center justify-between gap-5">
         <h2 className="text-xl font-bold">Artikel Terkait</h2>
         <Link href={"/articles"}>
-          <Button variant={"ghost"}>Selengkapnya</Button>
+          <Button variant={"outline"}>Selengkapnya</Button>
         </Link>
       </div>
       <div className="flex flex-col gap-2">
@@ -26,9 +26,6 @@ export default function ArticlesSection() {
             }}
           />
         ))}
-      </div>
-      <div className="flex justify-center pt-2">
-        <Button variant={"ghost"}>Lihat Selengkapnya</Button>
       </div>
     </section>
   );

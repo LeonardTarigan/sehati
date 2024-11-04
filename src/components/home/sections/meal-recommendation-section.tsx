@@ -24,7 +24,7 @@ export default function MealRecommendationSection() {
       <div className="flex items-center justify-between gap-5">
         <h2 className="px-3 text-xl font-bold">Menu Hari Ini</h2>
         <Link href={"/plan"}>
-          <Button variant={"ghost"}>Selengkapnya</Button>
+          <Button variant={"outline"}>Selengkapnya</Button>
         </Link>
       </div>
       <Swiper
