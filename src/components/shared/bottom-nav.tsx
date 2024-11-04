@@ -12,7 +12,7 @@ export default function BottomNav() {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed bottom-0 mx-auto flex w-full max-w-md justify-around bg-white px-5 py-2 font-semibold">
+    <nav className="fixed bottom-0 z-40 mx-auto flex w-full max-w-md justify-around bg-white px-5 py-2 font-semibold">
       <Link
         href={"/"}
         className={`flex flex-col items-center rounded-md px-2 text-[10px] ${pathname === "/" ? "text-primary-500" : "text-neutral-400"}`}
