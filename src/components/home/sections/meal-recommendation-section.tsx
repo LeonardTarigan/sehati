@@ -23,7 +23,7 @@ export default function MealRecommendationSection() {
     <section className="py-5">
       <div className="flex items-center justify-between gap-5">
         <h2 className="px-3 text-xl font-bold">Menu Hari Ini</h2>
-        <Link href={"/plan"}>
+        <Link href={"/planner"}>
           <Button variant={"outline"}>Selengkapnya</Button>
         </Link>
       </div>

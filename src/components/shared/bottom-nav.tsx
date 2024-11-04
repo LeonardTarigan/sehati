@@ -11,6 +11,8 @@ import { usePathname } from "next/navigation";
 export default function BottomNav() {
   const pathname = usePathname();
 
+  if (pathname === "/assistant") return;
+
   return (
     <nav className="fixed bottom-0 z-40 mx-auto flex w-full max-w-md justify-around bg-white px-5 py-2 font-semibold">
       <Link
@@ -29,9 +31,9 @@ export default function BottomNav() {
       </Link>
       <Link
         href={"/assistant"}
-        className={`-mt-10 flex h-fit flex-col items-center rounded-full border-8 border-white bg-primary-500 p-3 text-[10px] text-white transition-colors duration-150 hover:bg-primary-600`}
+        className={`flex h-fit flex-col items-center rounded-full border-white bg-primary-500 text-[10px] text-white transition-colors duration-150 hover:bg-primary-600 ${pathname === "/assistant" ? "p-2" : "-mt-10 border-8 p-3"}`}
       >
-        <BotIcon size={30} />
+        <BotIcon size={pathname === "/assistant" ? 20 : 30} />
       </Link>
       <Link
         href={"/planner"}
