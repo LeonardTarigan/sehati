@@ -8,7 +8,7 @@ import StatsSection from "@/components/home/sections/stats-section";
 
 export default function Home() {
   return (
-    <main className="">
+    <main>
       <HeaderSection />
       <ConditionSection />
       <StatsSection />

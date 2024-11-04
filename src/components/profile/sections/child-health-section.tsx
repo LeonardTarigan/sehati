@@ -3,7 +3,7 @@ import HealthStatCard from "@/components/profile/cards/health-stat-card";
 export default function ChildHealthSection() {
   return (
     <section className="space-y-2 px-3 py-5">
-      <div className="grid grid-cols-3 gap-2">
+      <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
         <HealthStatCard
           title="Berat Badan"
           content="13 kg"

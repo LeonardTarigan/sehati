@@ -30,7 +30,7 @@ export default function HealthStatCard({
   return (
     <div
       className={cn(
-        "flex aspect-square flex-col rounded-xl p-3 text-center",
+        "flex flex-col gap-3 rounded-xl p-3 text-center sm:aspect-square",
         colorSet,
         className,
       )}
