@@ -28,8 +28,8 @@ export default function BottomNav() {
         <span>Blog</span>
       </Link>
       <Link
-        href={"/assistan"}
-        className={`-mt-10 flex h-fit flex-col items-center rounded-full bg-primary-500 p-3 text-[10px] text-white`}
+        href={"/assistant"}
+        className={`-mt-10 flex h-fit flex-col items-center rounded-full border-8 border-white bg-primary-500 p-3 text-[10px] text-white transition-colors duration-150 hover:bg-primary-600`}
       >
         <BotIcon size={30} />
       </Link>
